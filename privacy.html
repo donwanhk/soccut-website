@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SocCut — Privacy Policy</title>
+<meta name="description" content="Privacy policy for the SocCut macOS app.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #16181d;
+    --muted: #5b6372;
+    --rule: #e3e6ec;
+    --accent: #2a87f5;
+    --card: #f6f8fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101217;
+      --fg: #e8eaef;
+      --muted: #9aa3b2;
+      --rule: #262b35;
+      --accent: #5aa9ff;
+      --card: #171a21;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 64px 16px 96px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  .mark {
+    width: 44px; height: 44px; border-radius: 10px; flex: none;
+    background: linear-gradient(135deg, #2b3340, #12151b);
+    display: grid; place-items: center;
+    font-weight: 700; font-size: 15px; letter-spacing: .5px;
+  }
+  .mark span:first-child { color: #2a87f5; }
+  .mark span:last-child { color: #ffc21f; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 18px 0 6px; letter-spacing: -0.02em; }
+  h2 { font-size: 20px; margin: 38px 0 10px; letter-spacing: -0.01em; }
+  .updated { color: var(--muted); font-size: 15px; margin: 0 0 28px; }
+  p, li { color: var(--fg); }
+  .lead { font-size: 19px; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 34px 0; }
+  .card {
+    background: var(--card); border: 1px solid var(--rule);
+    border-radius: 12px; padding: 18px 20px; margin: 22px 0;
+  }
+  .card p { margin: 0; }
+  a { color: var(--accent); }
+  footer { color: var(--muted); font-size: 14px; margin-top: 46px; }
+  code { background: var(--card); padding: 1px 5px; border-radius: 4px; font-size: 90%; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="mark"><div><span>S</span><span>C</span></div></div>
+    <strong>SocCut</strong>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated 9 November 2026</p>
+
+  <p class="lead">SocCut does not collect, transmit or store any personal data. It has no
+  account, no analytics, no advertising and no network connection of any kind.</p>
+
+  <div class="card">
+    <p><strong>In short:</strong> your video files and your edits never leave your Mac.
+    Nothing is uploaded, because the app contains no code that uploads anything.</p>
+  </div>
+
+  <h2>What the app does with your files</h2>
+  <p>SocCut is a video editor. You choose video files on your own Mac, mark up the match, and
+  export a new video file to a location you choose. All of that happens locally, on your
+  computer, using Apple's own media frameworks.</p>
+  <ul>
+    <li>Your source videos are read only from locations you explicitly select.</li>
+    <li>Exported videos and saved workspaces are written only where you tell the app to put them.</li>
+    <li>A saved workspace stores a reference to your source clips, your team names and colours,
+        and the edits you made. It stays on your Mac.</li>
+    <li>Temporary working files are written to the app's own sandboxed temporary directory and
+        are removed by macOS.</li>
+  </ul>
+
+  <h2>Data we collect</h2>
+  <p>None. Specifically, SocCut does not collect:</p>
+  <ul>
+    <li>Identity information — no name, email address or account of any kind</li>
+    <li>Usage or analytics data — no telemetry, crash reporting or diagnostics</li>
+    <li>Device identifiers, advertising identifiers or location</li>
+    <li>Contacts, photos, calendars, or any data from other apps</li>
+    <li>The contents of your videos, or any information derived from them</li>
+  </ul>
+
+  <h2>Network access</h2>
+  <p>The App Store version of SocCut makes no network connections. It runs inside Apple's app
+  sandbox and is not granted the network entitlement, so it is incapable of connecting to the
+  internet even if it were asked to.</p>
+
+  <h2>Third parties</h2>
+  <p>There are none. SocCut contains no third-party SDKs, advertising libraries, analytics
+  services or tracking of any sort. No data is shared with anyone, because no data is collected.</p>
+
+  <h2>Children</h2>
+  <p>SocCut collects no data from anyone, including children under 13.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy ever changes, the revised version will be published at this address with a
+  new date at the top. Since the app collects nothing, any change is likely to be a
+  clarification rather than a change in practice.</p>
+
+  <h2>Contact</h2>
+  <!-- TODO: replace with the address you want published. App Store Connect requires a
+       contact method, and whatever goes here is public and will be scraped. Consider a
+       dedicated alias rather than a personal mailbox. -->
+  <p>Questions about this policy or about the app can be sent to
+  <a href="mailto:support@example.com">support@example.com</a>.</p>
+
+  <hr>
+  <footer>
+    SocCut is a macOS application for editing futsal and football match footage.<br>
+    © 2026 SocCut.
+  </footer>
+
+</div>
+</body>
+</html>
