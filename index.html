@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SocCut</title>
+<link rel="icon" type="image/png" href="appicon.png">
 <meta name="description" content="A macOS editor for futsal and football match footage.">
 <style>
   :root { --bg:#ffffff; --fg:#16181d; --muted:#5b6372; --accent:#2a87f5; --rule:#e3e6ec; }
@@ -15,10 +16,9 @@
     font:17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing:antialiased; }
   .wrap { max-width:680px; margin:0 auto; padding:88px 16px 96px; }
-  .mark { width:72px; height:72px; border-radius:16px;
-    background:linear-gradient(135deg,#2b3340,#12151b); display:grid; place-items:center;
-    font-weight:700; font-size:24px; letter-spacing:.5px; margin-bottom:24px; }
-  .mark span:first-child { color:#2a87f5; } .mark span:last-child { color:#ffc21f; }
+  /* The real app icon. No border-radius: the squircle and its transparent corners are
+     already in the PNG, so rounding here would clip the artwork. */
+  .mark { width:72px; height:72px; display:block; margin-bottom:24px; }
   h1 { font-size:38px; margin:0 0 10px; letter-spacing:-0.025em; }
   .tag { font-size:20px; color:var(--muted); margin:0 0 34px; }
   ul { padding-left:22px; } li { margin:7px 0; }
@@ -29,7 +29,7 @@
 </head>
 <body>
 <div class="wrap">
-  <div class="mark"><div><span>S</span><span>C</span></div></div>
+  <img class="mark" src="appicon.png" width="72" height="72" alt="SocCut app icon">
   <h1>SocCut</h1>
   <p class="tag">A macOS editor for futsal and football match footage.</p>
   <ul>

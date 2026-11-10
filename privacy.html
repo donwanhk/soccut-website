@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SocCut — Privacy Policy</title>
+<link rel="icon" type="image/png" href="appicon.png">
 <meta name="description" content="Privacy policy for the SocCut macOS app.">
 <style>
   :root {
@@ -34,14 +35,9 @@
   }
   .wrap { max-width: 720px; margin: 0 auto; padding: 64px 16px 96px; }
   header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
-  .mark {
-    width: 44px; height: 44px; border-radius: 10px; flex: none;
-    background: linear-gradient(135deg, #2b3340, #12151b);
-    display: grid; place-items: center;
-    font-weight: 700; font-size: 15px; letter-spacing: .5px;
-  }
-  .mark span:first-child { color: #2a87f5; }
-  .mark span:last-child { color: #ffc21f; }
+  /* The real app icon. No border-radius: the squircle and its transparent corners are
+     already in the PNG, so rounding here would clip the artwork. */
+  .mark { width: 44px; height: 44px; flex: none; display: block; }
   h1 { font-size: 30px; line-height: 1.2; margin: 18px 0 6px; letter-spacing: -0.02em; }
   h2 { font-size: 20px; margin: 38px 0 10px; letter-spacing: -0.01em; }
   .updated { color: var(--muted); font-size: 15px; margin: 0 0 28px; }
@@ -64,7 +60,7 @@
 <div class="wrap">
 
   <header>
-    <div class="mark"><div><span>S</span><span>C</span></div></div>
+    <img class="mark" src="appicon.png" width="44" height="44" alt="SocCut app icon">
     <strong>SocCut</strong>
   </header>
 
